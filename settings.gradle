@@ -1,6 +1,7 @@
 rootProject.name = "handson-msa"
 
-include ':config-server', ":service-discovery"
+include ':config-server', ':service-discovery', ':accounts-service'
 
 project(':config-server').projectDir = new File('./config-server')
 project(':service-discovery').projectDir = new File('./service-discovery')
+project(':accounts-service').projectDir = new File('./accounts-service')
